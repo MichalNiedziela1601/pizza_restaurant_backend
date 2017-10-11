@@ -1,0 +1,10 @@
+{
+  "name": "pizza_restaurant_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michal Niedziela",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.6.2"
+  }
+}
