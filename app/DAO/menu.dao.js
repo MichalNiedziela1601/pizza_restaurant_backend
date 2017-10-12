@@ -8,4 +8,4 @@ function getMenu() {
 
 module.exports = {
     getMenu
-}
+};

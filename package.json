@@ -11,6 +11,11 @@
         "pg-promise": "7.0.1"
     },
     "scripts": {
-        "seed": "node seed/seed.js"
+        "seed": "node seed/seed.js",
+        "eslint": "node_modules/.bin/eslint app"
+    },
+    "devDependencies": {
+        "eslint": "4.8.0",
+        "eslint-config-labnoratory": "1.1.5"
     }
 }

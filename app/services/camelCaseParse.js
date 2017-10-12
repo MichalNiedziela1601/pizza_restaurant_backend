@@ -2,18 +2,12 @@
 const _ = require('lodash');
 function parseObj(obj)
 {
-    return _.mapKeys(obj, function (value, key)
-    {
-        return _.camelCase(key);
-    });
+    return _.mapKeys(obj, (value, key) => _.camelCase(key));
 }
 
 function parseArrayOfObject(array)
 {
-    return _.map(array, function (val)
-    {
-        return parseObj(val);
-    })
+    return _.map(array, val => parseObj(val));
 }
 
 module.exports = {
