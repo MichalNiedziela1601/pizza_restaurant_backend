@@ -9,6 +9,7 @@ CREATE TABLE "pizza" (
 	"id" serial NOT NULL,
 	"name" TEXT NOT NULL UNIQUE,
 	"price" json NOT NULL,
+	"thumb" TEXT NOT NULL,
 	CONSTRAINT pizza_pk PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
