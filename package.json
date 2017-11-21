@@ -12,6 +12,7 @@
     },
     "scripts": {
         "seed": "node seed/seed.js",
+        "start": "nodemon app/index.js",
         "eslint": "node_modules/.bin/eslint app"
     },
     "devDependencies": {

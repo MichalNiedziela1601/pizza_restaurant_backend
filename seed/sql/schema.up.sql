@@ -8,6 +8,7 @@ CREATE SEQUENCE pizza_id_seq
 CREATE TABLE "pizza" (
 	"id" serial NOT NULL,
 	"name" TEXT NOT NULL UNIQUE,
+	"ingredients" TEXT[] NOT NULL,
 	"price" json NOT NULL,
 	"thumb" TEXT NOT NULL,
 	CONSTRAINT pizza_pk PRIMARY KEY ("id")
