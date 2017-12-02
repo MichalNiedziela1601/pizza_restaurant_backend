@@ -1,10 +1,22 @@
 {
-  "name": "pizza_restaurant_backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Michal Niedziela",
-  "license": "MIT",
-  "dependencies": {
-    "hapi": "^16.6.2"
-  }
+    "name": "pizza_restaurant_backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Michal Niedziela",
+    "license": "MIT",
+    "dependencies": {
+        "bluebird": "3.5.1",
+        "hapi": "16.6.2",
+        "lodash": "4.17.4",
+        "pg-promise": "7.0.1"
+    },
+    "scripts": {
+        "seed": "node seed/seed.js",
+        "start": "nodemon app/index.js",
+        "eslint": "node_modules/.bin/eslint app"
+    },
+    "devDependencies": {
+        "eslint": "4.8.0",
+        "eslint-config-labnoratory": "1.1.5"
+    }
 }
